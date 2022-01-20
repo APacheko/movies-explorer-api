@@ -1,1 +1,1 @@
-# movies-explorer-api
+# Backand диплопа http://api.andreypacheco.diplom.nomoredomains.rocks/
