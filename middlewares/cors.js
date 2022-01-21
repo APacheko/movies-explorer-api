@@ -1,8 +1,8 @@
 const allowedCors = [
-  'https://andreypacheco.nomoredomains.rocks',
-  'http://andreypacheco.nomoredomains.rocks',
-  'https://andreypacheco.nomoredomains.rocks/',
-  'http://andreypacheco.nomoredomains.rocks/',
+  'https://api.andreypacheco.diplom.nomoredomains.rocks',
+  'http://api.andreypacheco.diplom.nomoredomains.rocks',
+  'https://andreypacheco.diplom.nomoredomains.rocks/',
+  'http://andreypacheco.diplom.nomoredomains.rocks/',
   'http://localhost:3000',
 ];
 
