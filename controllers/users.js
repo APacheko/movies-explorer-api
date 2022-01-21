@@ -22,7 +22,7 @@ module.exports.createUser = (req, res, next) => {
       if (err.name === 'ValidationError' || err.name === 'CastError') {
         throw new BadRequestError('Переданы некорректные данные для создания пользователя');
       }
-      if (err.name === 'MongoServerError' && err.code === 11000) {
+      if (err.code === 11000) {
         throw new ConflictError('Пользователь с указанным email уже существует');
       }
       next(err);
@@ -54,12 +54,6 @@ module.exports.getUserMe = (req, res, next) => {
       } else {
         throw new NotFoundError('Пользователь с указанным id не найден');
       }
-    })
-    .catch((err) => {
-      if (err.name === 'CastError') {
-        throw new BadRequestError('Переданы некорректные данные');
-      }
-      next(err);
     })
     .catch(next);
 };
