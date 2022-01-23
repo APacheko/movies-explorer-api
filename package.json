@@ -1,0 +1,46 @@
+{
+  "name": "movies",
+  "version": "1.0.0",
+  "description": "## Директории",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "deploy": "scp -r ./* andrey@62.84.121.162:/home/andrey",
+    "dev": "nodemon app.js",
+    "lint": "npx eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/APacheko/movies-explorer-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/APacheko/movies-explorer-api/issues"
+  },
+  "homepage": "https://github.com/APacheko/movies-explorer-api#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.1",
+    "celebrate": "^15.0.0",
+    "cookie": "^0.4.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "express-jwt": "^6.1.0",
+    "express-rate-limit": "^6.1.0",
+    "express-winston": "^4.2.0",
+    "helmet": "^5.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.6",
+    "mongoose-validator": "^2.1.0",
+    "validator": "^13.7.0",
+    "winston": "^3.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.2",
+    "nodemon": "^2.0.15"
+  }
+}
