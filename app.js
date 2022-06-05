@@ -16,6 +16,7 @@ const app = express();
 
 mongoose.connect(NODE_ENV === 'production' ? MONGODB : 'mongodb://localhost:27017/moviesdb', {
   useNewUrlParser: true,
+
 });
 
 app.use(requestLogger);

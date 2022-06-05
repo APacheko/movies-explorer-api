@@ -2,6 +2,10 @@ const allowedCors = [
   'https://andreypacheco.diplom.nomoredomains.rocks',
   'http://andreypacheco.diplom.nomoredomains.rocks',
   'http://localhost:3000',
+  'https://localhost:3000',
+  'http://localhost:3001',
+  'https://localhost:3001',
+  'localhost:3001',
 ];
 
 function cors(req, res, next) {

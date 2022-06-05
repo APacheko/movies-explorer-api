@@ -1,0 +1,3 @@
+NODE_ENV=production
+JWT_SECRET=ab995920e326409781857d4f8b41735d0d9434001ec38400ba0f611fe6b8c995
+MONGODB=mongodb://localhost:27017/moviesdb

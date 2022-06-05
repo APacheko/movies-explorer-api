@@ -19,7 +19,7 @@ router.post('/movies', celebrate({
     year: Joi.string().required(),
     description: Joi.string().required(),
     image: Joi.string().required().custom(validateUrl),
-    trailer: Joi.string().required().custom(validateUrl),
+    trailerLink: Joi.string().required().custom(validateUrl),
     thumbnail: Joi.string().required().custom(validateUrl),
     owner: Joi.string().hex().length(24),
     movieId: Joi.number().required(),
@@ -29,8 +29,12 @@ router.post('/movies', celebrate({
 }), createMovie);
 router.delete('/movies/:movieId', celebrate({
   params: Joi.object().keys({
-    movieId: Joi.string().hex().length(24).required(),
+    movieId: Joi.required(),
   }),
 }), deleteMovie);
+
+router.get('/test', (req, res) => {
+  res.send('Hello World!');
+});
 
 module.exports = router;
